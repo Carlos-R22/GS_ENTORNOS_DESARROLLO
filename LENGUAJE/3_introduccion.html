@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introducción</title>
+	<style type="text/css">
+		.numeroClass{
+			font-size: 25px;
+		}
+		
+	</style>
+</head>
+<body>
+<button onclick="sumar();">sumar 1</button>
+<button onclick="restar();">restar 1</button>
+<br><br><br>
+<div class="numeroClass" id="numero">0</div>
+
+</body>
+<script type="text/javascript">
+var cantidad = 0;
+	function sumar(){
+		cantidad = cantidad + 1;
+		document.getElementById('numero').innerHTML = cantidad;
+	}
+	function restar(){
+		cantidad = cantidad - 1;
+		document.getElementById('numero').innerHTML = cantidad;
+	}
+</script>
+</html>

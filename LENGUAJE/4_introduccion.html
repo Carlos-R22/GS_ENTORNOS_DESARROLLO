@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introducción</title>
+	<style type="text/css">
+		.numeroClass{
+			font-size: 25px;
+		}
+		
+	</style>
+</head>
+<body>
+<input id="caja1">
+<button onclick="chequeo();">par / impar</button>
+<br><br><br>
+<div class="numeroClass" id="resultado"></div>
+
+</body>
+<script type="text/javascript">
+	function chequeo(){
+		var n = document.getElementById('caja1').value;
+		if(n%2 == 0){
+			document.getElementById('resultado').innerHTML = "NUMERO PAR";
+			document.getElementById('resultado').style.color = "green";
+		}
+		else{
+			document.getElementById('resultado').innerHTML = "NUMERO IMPAR";
+			document.getElementById('resultado').style.color = "red";
+		}
+	}
+</script>
+</html>
