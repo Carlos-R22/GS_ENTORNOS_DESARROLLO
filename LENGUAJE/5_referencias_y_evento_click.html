@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Referncias y click</title>
+</head>
+<body>
+<!-- Para programar un evento de un elemento dentro de su etiqueta de apertura
+escribiremos on nombre del evento (click, mouseover, mouseout, focus, blur,...) y la función o código que queremos ejecutar cuando se produzca el evento -->
+<button onclick="pulsar();">pulsar</button>
+<br>
+<input id="caja1">
+<br>
+<div id="div1"></div>
+<br>
+<div id="div2"></div>
+
+</body>
+<script type="text/javascript">
+	function pulsar(){
+		// en las cajas de texto, para acceder a su contenido
+		// referenciamos con la propiedad value
+		document.getElementById('caja1').value = 'valor1';
+
+		// en las capas DIV, spans, p , para acceder a su contenido
+		// referenciamos con la propiedad innerHTML
+		document.getElementById('div1').innerHTML = 'valor2';
+
+		// en los elementos HTML, para acceder a un estilo
+		// referenciamos con la propiedad style y nombre del estilo
+		document.getElementById('div2').innerHTML = 'valor3';
+		document.getElementById('div2').style.backgroundColor = 'yellow';
+		document.getElementById('div2').style.color = 'red';
+		
+	}
+</script>
+</html>

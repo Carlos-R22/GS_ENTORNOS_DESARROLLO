@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introducción</title>
+	<style type="text/css">
+		.azul{
+			background:blue;
+		}
+		.rojo{
+			background:red;
+		}
+	</style>
+</head>
+<body>
+<button onclick="cambiarAzul();">azul</button>
+<button onclick="cambiarRojo();">rojo</button>
+<br><br><br>
+<div id="texto">hola</div>
+
+</body>
+<script type="text/javascript">
+	function cambiarAzul(){
+		document.getElementById('texto').style.backgroundColor = 'blue';
+	}
+	function cambiarRojo(){
+		document.getElementById('texto').style.backgroundColor = 'red';
+	}
+</script>
+</html>
