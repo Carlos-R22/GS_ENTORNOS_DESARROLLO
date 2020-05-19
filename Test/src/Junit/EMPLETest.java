@@ -161,12 +161,29 @@ public class EMPLETest {
 	}
 	
 	
+	@Test
+	public void test8_directivocorrecto()
+	{
+		
+		
+		try 
+		{ 
+			e.establecerSerDirectivo("-");
+			
+		} 
+		catch (CargoExcepcion e2)
+		{
+			fail();
+		}
+			
+		assertTrue(e.getDirectivo());	
+	}
 	
 	@Test(expected=CargoExcepcion.class)
 	public void test_DirectivoIncorrecto() throws CargoExcepcion
 	{
 	         
-		e.establecerSerDirectivo("-");
+		e.establecerSerDirectivo("*");
 	}
 	
 //	@Test
